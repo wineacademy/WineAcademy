@@ -14,4 +14,4 @@ git push origin master
 chmod 777 -R *
 echo "Wiadomość wygenerowana przez serwer. Nie odpisuje" > $tresc
 echo "plik do pobrania http://wineacademy.pl/backup/sql/"$(date +"%Y%m%d")".sql" >> $tresc
-/bin/mail -s "$temat" "$email" < $tresc
+mail -s "$temat" "$email" < $tresc
